@@ -11,12 +11,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Shift Space Home</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="./index.html"
           ><img src="./assets/logo.png" id="logoImage"
         /></a>
         <button
@@ -30,13 +30,13 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="./about-us/index.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
@@ -134,7 +134,7 @@
     <div class="container">
       <div class="row" id="requirements">
         <div class="container content-justify">
-          <h2>Loan Application Process</h2>
+          <h1>Loan Application Process</h1>
           <!-- <h4 class="card-title">REQUIREMENTS</h4>
           <ol>
             <li>Certified ID Copy</li>
@@ -235,7 +235,7 @@
         Mcrolending offers loans at 30% interest rate and always pays on time.
       </div>
       <div class="col">
-        <h3>3.3 Purchase order financing</h3>
+        <h3>Purchase order financing</h3>
         Provide clients with the funds they require when they need it. By
         providing clients with purchase order financing, you can make it easier
         for them to buy goods and services before they are paid. We provide
@@ -244,43 +244,48 @@
       </div>
     </div>
     <section class="footer" id="contact-us">
-      <h2>contact us</h2>
       <div class="row">
         <div class="col">
           <div class="container">
-            <div>+264853454440 </div>
+            <h2>Contact Us</h2>
+            <div>+264853454440</div>
             <div>info@m1.com.na</div>
-            <div>www.shiftfinance.m1.com.na </div>
+            <div>www.shiftfinance.m1.com.na</div>
             <div>Windhoek Namibia</div>
-            
           </div>
         </div>
         <div class="col">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Message</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Example textarea</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
-      <br>
-
+      <br />
     </section>
     <!-- <section>
       <div class="container">
@@ -296,25 +301,28 @@
     </section> -->
 
     <section class="footer">
-      <div class="container" >
+      <div class="container">
         <div class="row">
-          
-          <div class="col">
-            <div>Privacy Policy</div>
-            <div>Terms & Conditions</div>
-            
-            <div>Powered by ShiftSpace (Insert ShiftSpace Trading Logo</div>
+          <div class="col d-flex" id="terms-div">
+            <div class="container">
+              <a href="./privacy/index.html">Privacy Policy</a>
+            </div>
+            <br />
+            <div class="container">Terms & Conditions</div>
+            <br />
+            <div class="container">Powered by ShiftSpace</div>
           </div>
           <div class="col">
-            <img src="./assets/logo.png" id="footerImage" />©ShiftSpace Finance 2022
+            <img src="./assets/logo.png" id="footerImage" />©ShiftSpace Finance
+            2022
           </div>
         </div>
         <div class="row">
-            <div class="container d-flex  justify-content-center">
-                <div>
-                    Developed by M1 Technologies (insert link to www.m1.com.na)
-                  </div>
+          <div class="container d-flex justify-content-center">
+            <div>
+              <a href="https://www.m1.com.na">Developed by M1 Technologies</a>
             </div>
+          </div>
         </div>
       </div>
       <!-- <div class="row">
