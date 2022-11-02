@@ -2,17 +2,20 @@ import React from "react";
 import { Container, Segment } from "semantic-ui-react";
 import { Image } from "semantic-ui-react";
 import { Divider } from "semantic-ui-react";
+import TermsAndConditions from "../terms-and-conditions/termsAndConditions";
 
 import ApplicationProcess from "./applicationProcess";
+import AppProccess from "./appProcess";
 import Carousel from "./carousel";
 import ContactUs from "./contactUs";
 import Footer from "./footer";
+import LandingPage from "./landing";
 import Navbar from "./navbar";
 import OurServices from "./ourServices";
 
 function Home() {
   const backGroundStyle = {
-    backgroundColor: "#004aad",
+    backgroundColor: "#1C2541",
     color: "white",
     padding: "5rem",
     margin: "2rem 0",
@@ -21,13 +24,15 @@ function Home() {
     <>
       <Container>
         <Navbar />
+        <br></br>
       </Container>
       <br></br>
       <br></br>
-      <Carousel />
+      <LandingPage />
+      {/* <Carousel /> */}
       <Container>
-        <h1>Loan Application Process</h1>
-        <ApplicationProcess />
+        {/* <ApplicationProcess /> */}
+        <AppProccess />
         {/* <div class="row" id="services">
           <h2>Our Services</h2>
           <div class="col">
@@ -62,6 +67,7 @@ function Home() {
       </div>
       <Container>
         <ContactUs />
+        <TermsAndConditions/>
         <div className="ui secondary bottom  menu">
           <Footer />
         </div>

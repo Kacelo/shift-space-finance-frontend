@@ -1,9 +1,18 @@
 import React from "react";
 import { Grid, Image } from "semantic-ui-react";
 
+const backGroundStyle = {
+  backgroundColor: "#1C2541",
+  color: "white",
+  padding: "1em",
+  margin: "2rem",
+};
 const OurServices = () => (
-  <Grid divided="vertically"  stackable={true}>
-    <Grid.Row columns={3}>
+  
+  <Grid divided="vertically"  stackable={true} style={backGroundStyle}>
+        <h1>Our Services</h1>
+
+    <Grid.Row columns={3} >
       
       <Grid.Column>
         <h3>Provide short term loans</h3>
