@@ -16,12 +16,12 @@ function PrivacyPolicy() {
           <Grid.Row >
             <Grid.Column> <h2>Privacy Policy for ShiftSpace Finance</h2></Grid.Column>
             <Grid.Column>
-            <Image
+            {/* <Image
                   src={require("../../assets/security.jpg")}
                   size={"large"}
 
                   // style={imageCSS}
-                />
+                /> */}
             </Grid.Column>
 
            
