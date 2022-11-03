@@ -7,13 +7,14 @@ const Navbar = () => {
     <Container>
       <div class="ui fixed  menu">
         <Image
-          src={require("../../assets/ShiftSpace-png.png")}
+          src={require("../../assets/ShiftSpace-Logo-Horizontal-Small.png")}
           size={"small"}
+          href="/"
         />
         <div class="right menu">
-          <a class="item">Home</a>
-          <a class="item">Messages</a>
-          <a class="item">Friends</a>
+          <a class="item" href="/">Our Services</a>
+          <a class="item" href="/about-us">About Us</a>
+          <a class="item" href="/contact-us">Contact Us</a>
         </div>
       </div>
       

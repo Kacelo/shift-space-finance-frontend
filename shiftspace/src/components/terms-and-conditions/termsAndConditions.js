@@ -1,10 +1,15 @@
 import React from "react";
 import { Container, Grid, List } from "semantic-ui-react";
+import Footer from "../home/footer";
 import Navbar from "../home/navbar";
 
 function TermsAndConditions() {
   return (
     <div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Container>
         <Navbar />
       </Container>
@@ -104,6 +109,7 @@ function TermsAndConditions() {
               </List.Item>
             </List>
         </Grid>
+        <Footer/>
       </Container>
     </div>
   );

@@ -4,8 +4,8 @@ import { Grid, Image } from "semantic-ui-react";
 const backGroundStyle = {
   backgroundColor: "#1C2541",
   color: "white",
-  padding: "1em",
-  margin: "2rem",
+  padding: "1em 0",
+  margin: "2rem 0",
 };
 const OurServices = () => (
   
