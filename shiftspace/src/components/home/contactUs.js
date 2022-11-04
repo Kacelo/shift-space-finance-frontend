@@ -1,25 +1,26 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Divider, Form, Grid, Image } from "semantic-ui-react";
-import Footer from "./footer";
-import Navbar from "./navbar";
+import MDBNFooter from "../footer/MDBNFooter";
+import MDBNNav from "./mbnNav";
 
 const footerStyle = {
   position: "absolute",
   bottom: "0",
-  width: "100%"
+  width: "100%",
 };
 const ContactUs = () => (
+  <>
+  <MDBNNav />
   <Container>
-     <Navbar />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-    <Grid divided="vertically" stackable={true} >
-      <Grid.Row textAlign={'center'}>
+     <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <Grid divided="vertically" stackable={true}>
+      <Grid.Row textAlign={"center"}>
         <h1>Get In Touch</h1>
       </Grid.Row>
       <Grid.Row columns={2}>
@@ -42,12 +43,14 @@ const ContactUs = () => (
             <Form.Button>Submit</Form.Button>
           </Form>
         </Grid.Column>
+        
       </Grid.Row>
     </Grid>
-    <Container style={footerStyle}>
-  <Footer/>
-    </Container>
   </Container>
+  <MDBNFooter />
+
+  </>
+  
 );
 
 export default ContactUs;

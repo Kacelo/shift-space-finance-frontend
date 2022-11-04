@@ -1,30 +1,30 @@
 import React from "react";
 import { Container, Grid, Image, List } from "semantic-ui-react";
+import MDBNFooter from "../footer/MDBNFooter";
 import Footer from "../home/footer";
+import MDBNNav from "../home/mbnNav";
 import Navbar from "../home/navbar";
 
 function PrivacyPolicy() {
   return (
     <div>
+      <MDBNNav />{" "}
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-        <Navbar />
       <Container>
         <Grid columns={2} divided="vertically" stackable>
-          <Grid.Row >
-            <Grid.Column> <h2>Privacy Policy for ShiftSpace Finance</h2></Grid.Column>
+          <Grid.Row>
             <Grid.Column>
-            {/* <Image
+              {" "}
+              <h2>Privacy Policy for ShiftSpace Finance</h2>
+            </Grid.Column>
+            <Grid.Column>
+              {/* <Image
                   src={require("../../assets/security.jpg")}
                   size={"large"}
 
                   // style={imageCSS}
                 /> */}
             </Grid.Column>
-
-           
           </Grid.Row>
           <Grid.Row textAlign="right">
             <h2>Privacy Policy</h2>
@@ -529,8 +529,9 @@ function PrivacyPolicy() {
           </div>
           <div class="container"></div>
         </Grid>
-        <Footer />
+      
       </Container>
+      <MDBNFooter />
     </div>
   );
 }
