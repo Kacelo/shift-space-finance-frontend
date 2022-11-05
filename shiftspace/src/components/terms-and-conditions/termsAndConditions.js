@@ -1,13 +1,15 @@
 import React from "react";
 import { Container, Grid, List } from "semantic-ui-react";
+import MDBNFooter from "../footer/MDBNFooter";
+import Footer from "../home/footer";
+import MDBNNav from "../home/mbnNav";
 import Navbar from "../home/navbar";
 
 function TermsAndConditions() {
   return (
     <div>
       <Container>
-        <Navbar />
-      </Container>
+      <MDBNNav />      </Container>
       <Container>
         <Grid>
           <Grid.Row textAlign="right">
@@ -105,6 +107,8 @@ function TermsAndConditions() {
             </List>
         </Grid>
       </Container>
+      <MDBNFooter/>
+
     </div>
   );
 }

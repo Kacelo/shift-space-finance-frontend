@@ -17,8 +17,7 @@ const AppProccess = () => (
         <Image
           src={require("../../assets/Untitled design (4).png")}
             size={"large"}
-          href="http://example.com"
-          target="_blank"
+          
           style={imageCSS}
         />
         </Container>

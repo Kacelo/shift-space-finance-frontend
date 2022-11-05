@@ -5,8 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 const backGroundStyle = {
   backgroundColor: "#1C2541",
   color: "white",
-  padding: "2rem 0 0 0",
-  marginTop: "2rem",
+  padding: "4rem 0 0 0",
 };
 const LandingPage = () => (
   <Grid columns="equal" stackable={true}  style={backGroundStyle}>
