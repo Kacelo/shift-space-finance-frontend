@@ -18,20 +18,20 @@ function Home() {
 
   return (
     <>
-     <MDBNNav />
+      <MDBNNav />
       <br></br>
       <LandingPage />
       <Container>
         <AppProccess />
         <br></br>
       </Container>
-      <div className="our_services" style={backGroundStyle}>
+      <div id="our_services" style={backGroundStyle}>
         <Container>
           <OurServices />
         </Container>
       </div>
-      
-        <MDBNFooter/>
+
+      <MDBNFooter />
     </>
   );
 }

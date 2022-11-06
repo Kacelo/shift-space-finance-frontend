@@ -15,16 +15,16 @@ function MDBNFooter() {
             <br></br>
             <ul className="list-unstyled mb-0">
               <li>
-                <a href="/privacy-policy">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="/terms-and-conditions">Terms & Conditions</a>
-              </li>
-              <li>
                 <a href="/contact-us">Contact Us</a>
               </li>
               <li>
+                <a href="/privacy-policy">Privacy Policy</a>
+              </li>
+              <li>
                 <a href="/about-us">Get to know us</a>
+              </li>
+              <li>
+                <a href="/terms-and-conditions">Terms & Conditions</a>
               </li>
             </ul>
           </MDBCol>
@@ -37,6 +37,9 @@ function MDBNFooter() {
                   size={"small"}
                   style={imgStyle}
                 />
+              </li>
+              <li>
+                <p>Powered by ShiftSpace</p>
               </li>
             </ul>
           </MDBCol>

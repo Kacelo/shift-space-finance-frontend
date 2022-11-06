@@ -44,21 +44,16 @@ function MDBNNav() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="/">
-                Home
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink href="#">Our Services</MDBNavbarLink>
+              <MDBNavbarLink aria-current="page" href="/#our_services">Our Services</MDBNavbarLink>
             </MDBNavbarItem>
 
             <MDBNavbarItem>
-            <MDBNavbarLink href="/about-us">About Us</MDBNavbarLink>
+            <MDBNavbarLink aria-current="page" href="/about-us">About Us</MDBNavbarLink>
 
             </MDBNavbarItem>
 
             <MDBNavbarItem>
-            <MDBNavbarLink href="/contact-us">Contact Us</MDBNavbarLink>
+            <MDBNavbarLink aria-current="page" href="/contact-us">Contact Us</MDBNavbarLink>
 
             </MDBNavbarItem>
           </MDBNavbarNav>
