@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Grid, Image, Card } from "semantic-ui-react";
+import MDBNFooter from "../footer/MDBNFooter";
 import Footer from "../home/footer";
+import MDBNNav from "../home/mbnNav";
 import Navbar from "../home/navbar";
 
 const backGroundStyle = {
@@ -19,23 +21,16 @@ const imageCSS = {
 function AboutUs() {
   return (
     <div>
+      <MDBNNav />{" "}
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Navbar />
       <Container>
         <Grid columns={2} stackable={true}>
           <Grid.Row>
-            <Grid.Column >
+            <Grid.Column>
               <Container>
                 <Image
                   src={require("../../assets/laptopSquare.png")}
                   size={"large"}
-
                   style={imageCSS}
                 />
               </Container>
@@ -78,8 +73,9 @@ function AboutUs() {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <Footer />
+        
       </Container>
+      <MDBNFooter />
     </div>
   );
 }

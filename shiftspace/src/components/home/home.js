@@ -1,17 +1,12 @@
 import React from "react";
 import { Container, Segment } from "semantic-ui-react";
-import { Image } from "semantic-ui-react";
-import { Divider } from "semantic-ui-react";
-import TermsAndConditions from "../terms-and-conditions/termsAndConditions";
-
-import ApplicationProcess from "./applicationProcess";
 import AppProccess from "./appProcess";
-import Carousel from "./carousel";
-import ContactUs from "./contactUs";
 import Footer from "./footer";
 import LandingPage from "./landing";
 import Navbar from "./navbar";
 import OurServices from "./ourServices";
+import MDBNNav from "./mbnNav";
+import MDBNFooter from "../footer/MDBNFooter";
 
 function Home() {
   const backGroundStyle = {
@@ -23,24 +18,20 @@ function Home() {
 
   return (
     <>
-      <Container>
-        <Navbar />
-      </Container>
-      <br></br>
+      <MDBNNav />
       <br></br>
       <LandingPage />
       <Container>
         <AppProccess />
         <br></br>
       </Container>
-      <div className="our_services" style={backGroundStyle}>
+      <div id="our_services" style={backGroundStyle}>
         <Container>
           <OurServices />
         </Container>
       </div>
-      <Container>
-        <Footer />
-      </Container>
+
+      <MDBNFooter />
     </>
   );
 }

@@ -1,10 +1,10 @@
 import Home from "./components/home/home";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ContactUs from "./components/home/contactUs";
 import TermsAndConditions from "./components/terms-and-conditions/termsAndConditions";
 import PrivacyPolicy from "./components/terms-and-conditions/privacy";
 import AboutUs from "./components/about-us/about-us";
+import ContactUs from "./components/contact-us/contactUs";
 const App = () => {
   return (
     <BrowserRouter>
