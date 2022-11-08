@@ -30,22 +30,19 @@ function ModalExampleModal() {
       trigger={<Button primary>Apply Now</Button>}
       size={"tiny"}
       style={modalStyle}
-
     >
       <Modal.Header>Redminder!</Modal.Header>
       <Modal.Content image>
-        <Image
-          size="medium"
-          src={require("../../assets/37005.jpg")}
-          wrapped
-        />
+        <Image size="medium" src={require("../../assets/37005.jpg")} wrapped />
         <Modal.Description>
-          <Header>Make sure you have the following documents before applying</Header>
+          <Header>
+            Make sure you have the following documents before applying
+          </Header>
           <List ordered>
-          <List.Item>Certified ID Copy</List.Item>
-          <List.Item>Latest Proof of Income (Payslip)</List.Item>
-          <List.Item>3 Months Bank Statement</List.Item>
-        </List>
+            <List.Item>Certified ID Copy</List.Item>
+            <List.Item>Latest Proof of Income (Payslip)</List.Item>
+            <List.Item>3 Months Bank Statement</List.Item>
+          </List>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
@@ -58,7 +55,13 @@ function ModalExampleModal() {
           icon="checkmark"
           onClick={() => setOpen(false)}
           positive
-        />
+          as="a"
+          href="mailto:shiftfinance@m1.com.na"
+          target="_blank"
+        >
+          
+          {/* <a href="mailto:name@email.com"></a> */}
+        </Button>
       </Modal.Actions>
     </Modal>
   );
