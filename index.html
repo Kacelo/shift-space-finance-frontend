@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Shift Space Home</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./assets/logo.png" id="logoImage"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./about-us/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" id="introduction">
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <!-- <img src="./assets/african-woman-receiving-money-business-600w-2060724167.webp" class="d-block w-100" alt="..." id="carouselImage"> -->
+            <!-- <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p> -->
+            <div class="d-block w-100 h-100vh" id="item1">
+              <div class="d-block w-50 conatiner">
+                <h1 style="color: white">First slide label</h1>
+                <p style="color: white">
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="..." class="d-block w-100" alt="..." /> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row" id="requirements">
+        <div class="container content-justify">
+          <h1>Loan Application Process</h1>
+          <!-- <h4 class="card-title">REQUIREMENTS</h4>
+          <ol>
+            <li>Certified ID Copy</li>
+            <li>Latest Proof of Income (Payslip)</li>
+            <li>3 Months Bank Statement</li>
+          </ol> -->
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 25rem">
+            <img
+              src="./assets/application.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <!-- <h4 class="card-title">REQUIREMENTS</h4> -->
+              <ol>
+                <li><b>Certified ID Copy</b></li>
+                <li><b>Latest Proof of Income (Payslip)</b></li>
+                <li><b>3 Months Bank Statement</b></li>
+              </ol>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 25rem">
+            <img src="./assets/online.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <!-- <h5 class="card-title">Online Application Procedure</h5> -->
+
+              <ol>
+                <li>Email you required documents to shiftfinance@m1.com.na</li>
+                <li>
+                  We then do the Comp scan enquiry to see if the client is
+                  active at other short-term lender.
+                </li>
+                <li>
+                  We will then send you our loan application form for the full
+                  completion.
+                </li>
+                <li>Sent back the signed form to us.</li>
+                <li>Calculate your affordability.</li>
+                <li>Then fund will be paid in your account.</li>
+              </ol>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 25rem">
+            <img src="./assets/face.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <ol>
+                <li>Provide your required documents,</li>
+                <li>We will do a Compu Scan enquiry</li>
+                <li>
+                  We will fill the application and the loan agreement and sign
+                  both documents.
+                </li>
+                <li>Within 5 minutes you receive your cash.</li>
+              </ol>
+              <br />
+              <br />
+              <br />
+              <br />
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="row" id="services">
+      <h2>Our Services</h2>
+      <div class="col">
+        <h3>Provide short term loans</h3>
+        It is a well-known fact that emergencies arise in life at the most
+        inopportune moments. And when they do, we want to do whatever we can to
+        help our customers get back on their feet as quickly as possible. That’s
+        why we offer the best service possible, with the goal of getting you
+        back on track in no time at all.
+      </div>
+      <div class="col">
+        <h3>Micro-lending</h3>
+        Micro-lending If you are in need of fast money and need it fast,
+        Mcrolending offers loans at 30% interest rate and always pays on time.
+      </div>
+      <div class="col">
+        <h3>Purchase order financing</h3>
+        Provide clients with the funds they require when they need it. By
+        providing clients with purchase order financing, you can make it easier
+        for them to buy goods and services before they are paid. We provide
+        access to funds for purchase orders by leveraging our strong
+        relationships with suppliers and customers.
+      </div>
+    </div>
+    <section class="footer" id="contact-us">
+      <div class="row">
+        <div class="col">
+          <div class="container">
+            <h2>Contact Us</h2>
+            <div>+264853454440</div>
+            <div>info@m1.com.na</div>
+            <div>www.shiftfinance.m1.com.na</div>
+            <div>Windhoek Namibia</div>
+          </div>
+        </div>
+        <div class="col">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Example textarea</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <br />
+    </section>
+    <!-- <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div>Privacy Policy</div>
+          </div>
+          <div class="col">
+            <div>Terms & Conditions</div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex" id="terms-div">
+            <div class="container">
+              <a href="./privacy/index.html">Privacy Policy</a>
+            </div>
+            <br />
+            <div class="container">Terms & Conditions</div>
+            <br />
+            <div class="container">Powered by ShiftSpace</div>
+          </div>
+          <div class="col">
+            <img src="./assets/logo.png" id="footerImage" />©ShiftSpace Finance
+            2022
+          </div>
+        </div>
+        <div class="row">
+          <div class="container d-flex justify-content-center">
+            <div>
+              <a href="https://www.m1.com.na">Developed by M1 Technologies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+            <div class="col">
+                <div>Privacy Policy</div>
+                  <div>Developed by M1 Technologies (insert link to www.m1.com.na)</div>
+                  <div>Powered by ShiftSpace (Insert ShiftSpace Trading Logo</div>
+            </div> -->
+
+      <!-- </div> -->
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
