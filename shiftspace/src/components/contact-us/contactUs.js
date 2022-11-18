@@ -117,56 +117,99 @@ import { Divider, Form, Grid, Image } from "semantic-ui-react";
 import MDBNFooter from "../footer/MDBNFooter";
 import MDBNNav from "../home/mbnNav";
 
-const footerStyle = {
-  position: "absolute",
-  bottom: "0",
-  width: "100%",
+const imageStyle = {
+  cursor: "pointer",
 };
 const ContactUs = () => (
   <>
-  <MDBNNav />
-  <Container>
-     <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <Grid divided="vertically" stackable={true}>
-      <Grid.Row textAlign={"center"}>
-        <h1>Get In Touch</h1>
-      </Grid.Row>
-      <Grid.Row columns={2}>
-        <Grid.Column>
-          <div class="container">
-            <div>+264853454440</div>
-            <div>info@m1.com.na</div>
-            <div>www.shiftfinance.m1.com.na</div>
-            <div>Windhoek Namibia</div>
-          </div>
-        </Grid.Column>
-        <Grid.Column>
-          <Form action="https://getform.io/f/d55deb0c-c88b-4988-b4ac-f88570d48858" method="POST">
-            <Form.Group widths="equal">
-              <Form.Input fluid label="Email" name="email" placeholder="Email Address" />
-              <Form.Input fluid label="First name" name="fname" placeholder="First name" />
-              <Form.Input fluid label="Last name" name="lname" placeholder="Last name" />
-            </Form.Group>
-            <Form.TextArea label="Message" name="message" placeholder="Message" />
-            <Form.Button>Submit</Form.Button>
-          </Form>
-        </Grid.Column>
-        
-      </Grid.Row>
-    </Grid>
-  </Container>
-  <MDBNFooter />
+    <MDBNNav />
+    <Container>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Grid divided="vertically" stackable={true}>
+        <Grid.Row textAlign={"center"}>
+          <h1>Get In Touch</h1>
+        </Grid.Row>
+        <Grid.Row columns={2}>
+          <Grid.Column>
+            {/* <div class="container">
+              <div>+264853454440</div>
+              <div>info@m1.com.na</div>
+              <div>www.shiftfinance.m1.com.na</div>
+              <div>Windhoek Namibia</div>
+            </div> */}
+            <div class="container">
+              <div className="row">
+                <div className="col" style={imageStyle}>
+                  <h5>Send us a message</h5>{" "}
+                  <a href="https://wa.me/264813454440?text=Hello">
+                    {" "}
+                    <Image
+                      size="small"
+                      src={require("../../assets/03_Stacked/01_Digital/03_PNG/Black/Digital_Stacked_Black.png")}
+                      wrapped
+                    />
+                  </a>
+                </div>
+                <div className="col"  style={imageStyle}>
+                  <h5>Give us a call</h5>
+                  <a href="tel:+264853454440" >
+                    <Image
+                      size="tiny"
+                      src={require("../../assets/iphone.png")}
+                      wrapped
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Grid.Column>
+          <Grid.Column>
+            <h5>or leave us an email</h5>
 
+            <Form
+              action="https://getform.io/f/d55deb0c-c88b-4988-b4ac-f88570d48858"
+              method="POST"
+            >
+              <Form.Group widths="equal">
+                <Form.Input
+                  fluid
+                  label="Email"
+                  name="email"
+                  placeholder="Email Address"
+                />
+                <Form.Input
+                  fluid
+                  label="First name"
+                  name="fname"
+                  placeholder="First name"
+                />
+                <Form.Input
+                  fluid
+                  label="Last name"
+                  name="lname"
+                  placeholder="Last name"
+                />
+              </Form.Group>
+              <Form.TextArea
+                label="Message"
+                name="message"
+                placeholder="Message"
+              />
+              <Form.Button primary>Submit</Form.Button>
+            </Form>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </Container>
+    <MDBNFooter />
   </>
-  
 );
 
 // export default ContactUs;
-
 
 export default ContactUs;

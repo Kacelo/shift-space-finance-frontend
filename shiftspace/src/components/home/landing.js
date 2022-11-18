@@ -1,5 +1,13 @@
 import React from "react";
-import { Button, Container, Grid, Image, Segment } from "semantic-ui-react";
+import {
+  Button,
+  Container,
+  Grid,
+  Header,
+  Image,
+  List,
+  Modal,
+} from "semantic-ui-react";
 import Carousel from "react-bootstrap/Carousel";
 
 const backGroundStyle = {
@@ -7,8 +15,73 @@ const backGroundStyle = {
   color: "white",
   padding: "4rem 0 0 0",
 };
+const modalStyle = {
+  height: "40vh",
+  position: "initial",
+};
+function ModalExampleModal() {
+  const [open, setOpen] = React.useState(false);
+
+  return (
+    <Modal
+      onClose={() => setOpen(false)}
+      onOpen={() => setOpen(true)}
+      open={open}
+      trigger={<Button primary>Apply Now</Button>}
+      size={"tiny"}
+      style={modalStyle}
+    >
+      <Modal.Header>Redminder!</Modal.Header>
+      <Modal.Content image>
+        <Image size="medium" src={require("../../assets/37005.jpg")} wrapped />
+        <Modal.Description>
+          <Header>
+            Make sure you have the following documents before applying
+          </Header>
+          <List ordered>
+            <List.Item>Certified ID Copy</List.Item>
+            <List.Item>Latest Proof of Income (Payslip)</List.Item>
+            <List.Item>3 Months Bank Statement</List.Item>
+          </List>
+        </Modal.Description>
+      </Modal.Content>
+      <Modal.Actions>
+        <Button color="black" onClick={() => setOpen(false)}>
+          cancel
+        </Button>
+        <Button
+          content="Proceed to Email"
+          labelPosition="right"
+          icon="checkmark"
+          onClick={() => setOpen(false)}
+          positive
+          as="a"
+          href="mailto:shiftfinance@m1.com.na"
+          target="_blank"
+        >
+          
+          {/* <a href="mailto:name@email.com"></a> */}
+        </Button>
+      </Modal.Actions>
+    </Modal>
+  );
+}
+
+function ModalExampleShorthand() {
+  return (
+    <Modal
+      trigger={<Button primary>Apply Now</Button>}
+      header="Reminder!"
+      content="Call Benjamin regarding the reports."
+      actions={["Snooze", { key: "done", content: "Done", positive: true }]}
+    />
+  );
+}
+
+// export default ModalExampleShorthand
+
 const LandingPage = () => (
-  <Grid columns="equal" stackable={true}  style={backGroundStyle}>
+  <Grid columns="equal" stackable={true} style={backGroundStyle}>
     <Carousel fade>
       <Carousel.Item>
         <Grid columns="equal" stackable={true}>
@@ -25,8 +98,7 @@ const LandingPage = () => (
                   <p>Apply now and get approved today!</p>
                 </div>
                 <Container>
-                  <br></br>
-                  <Button primary>Apply Now</Button>
+                  <ModalExampleModal />
                 </Container>
               </Container>
             </Grid.Column>
@@ -56,7 +128,7 @@ const LandingPage = () => (
                 </div>
                 <Container>
                   <br></br>
-                  <Button primary>Apply Now</Button>
+                  <ModalExampleModal />
                 </Container>
               </Container>
             </Grid.Column>
@@ -85,7 +157,7 @@ const LandingPage = () => (
                 </div>
                 <Container>
                   <br></br>
-                  <Button primary>Apply Now</Button>
+                  <ModalExampleModal />
                 </Container>
               </Container>
             </Grid.Column>
