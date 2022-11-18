@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Grid, Image, List, Segment } from "semantic-ui-react";
+import { Container, Grid, Image, List } from "semantic-ui-react";
 
 const backGroundStyle = {
     padding: "2rem",
@@ -15,9 +15,11 @@ const AppProccess = () => (
       <Grid.Column>
         <Container >
         <Image
-          src={require("../../assets/Untitled design (4).png")}
+          src={require("../../assets/Untitled design (4).webp")}
             size={"large"}
-          
+            width= "50rem"
+            height="auto"
+          alt="man paying with credit card"
           style={imageCSS}
         />
         </Container>
@@ -26,13 +28,13 @@ const AppProccess = () => (
       <Grid.Column>
         <h1>Our Hassle Free Application Process</h1>
 
-        <h3>Step 1: Provide Required Documents</h3>
+        <h2>Step 1: Provide Required Documents</h2>
         <List ordered>
           <List.Item>Certified ID Copy</List.Item>
           <List.Item>Latest Proof of Income (Payslip)</List.Item>
           <List.Item>3 Months Bank Statement</List.Item>
         </List>
-        <h3>Step 2: Apply</h3>
+        <h2>Step 2: Apply</h2>
         <h3>Option 1: Online Application</h3>
         <List ordered>
           <List.Item>

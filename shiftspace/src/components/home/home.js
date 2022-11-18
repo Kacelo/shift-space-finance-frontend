@@ -1,9 +1,7 @@
 import React from "react";
-import { Container, Segment } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 import AppProccess from "./appProcess";
-import Footer from "./footer";
 import LandingPage from "./landing";
-import Navbar from "./navbar";
 import OurServices from "./ourServices";
 import MDBNNav from "./mbnNav";
 import MDBNFooter from "../footer/MDBNFooter";
@@ -20,7 +18,6 @@ function Home() {
   return (
     <>
       <ScrollToTop smooth />
-
       <MDBNNav />
       <br></br>
       <LandingPage />
@@ -33,7 +30,6 @@ function Home() {
           <OurServices />
         </Container>
       </div>
-
       <MDBNFooter />
     </>
   );

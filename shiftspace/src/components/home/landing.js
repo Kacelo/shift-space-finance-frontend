@@ -19,6 +19,10 @@ const modalStyle = {
   height: "40vh",
   position: "initial",
 };
+const buttonStyle = {
+  backgroundColor: "#0077C8",
+  color: "white",
+};
 function ModalExampleModal() {
   const [open, setOpen] = React.useState(false);
 
@@ -27,7 +31,7 @@ function ModalExampleModal() {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button primary>Apply Now</Button>}
+      trigger={<Button style={buttonStyle}>Apply Now</Button>}
       size={"tiny"}
       style={modalStyle}
     >
@@ -59,22 +63,10 @@ function ModalExampleModal() {
           href="mailto:shiftfinance@m1.com.na"
           target="_blank"
         >
-          
           {/* <a href="mailto:name@email.com"></a> */}
         </Button>
       </Modal.Actions>
     </Modal>
-  );
-}
-
-function ModalExampleShorthand() {
-  return (
-    <Modal
-      trigger={<Button primary>Apply Now</Button>}
-      header="Reminder!"
-      content="Call Benjamin regarding the reports."
-      actions={["Snooze", { key: "done", content: "Done", positive: true }]}
-    />
   );
 }
 
@@ -104,8 +96,11 @@ const LandingPage = () => (
             </Grid.Column>
             <Grid.Column>
               <Image
-                src={require("../../assets/woman3.png")}
-                //   size={"small"}
+                src={require("../../assets/woman3.webp")}
+                alt="woman smiling"
+                fetchpriority="low"
+                width= "auto"
+                height="auto"
               />
             </Grid.Column>
           </Grid.Row>
@@ -134,8 +129,11 @@ const LandingPage = () => (
             </Grid.Column>
             <Grid.Column>
               <Image
-                src={require("../../assets/woman3.png")}
-                //   size={"small"}
+                src={require("../../assets/woman3.webp")}
+                alt="woman smiling"
+                fetchpriority="low"
+                width= "auto"
+                height="auto"
               />
             </Grid.Column>
           </Grid.Row>
@@ -163,8 +161,11 @@ const LandingPage = () => (
             </Grid.Column>
             <Grid.Column>
               <Image
-                src={require("../../assets/woman3.png")}
-                //   size={"small"}
+                src={require("../../assets/woman3.webp")}
+                alt="woman smiling"
+                fetchpriority="low"
+                width= "auto"
+                height="auto"
               />
             </Grid.Column>
           </Grid.Row>

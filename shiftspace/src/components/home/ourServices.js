@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 const backGroundStyle = {
   backgroundColor: "#1C2541",
@@ -15,7 +15,7 @@ const OurServices = () => (
     <Grid.Row columns={3} >
       
       <Grid.Column>
-        <h3>Provide short term loans</h3>
+        <h2>Provide short term loans</h2>
         <p>
           It is a well-known fact that emergencies arise in life at the most
           inopportune moments. And when they do, we want to do whatever we can
@@ -25,14 +25,14 @@ const OurServices = () => (
         </p>
       </Grid.Column>
       <Grid.Column>
-        <h3>Micro-lending</h3>
+        <h2>Micro-lending</h2>
         <p>
           Micro-lending If you are in need of fast money and need it fast,
           Mcrolending offers loans at 30% interest rate and always pays on time.
         </p>
       </Grid.Column>
       <Grid.Column>
-        <h3>Purchase order financing</h3>
+        <h2>Purchase order financing</h2>
         <p>
           Provide clients with the funds they require when they need it. By
           providing clients with purchase order financing, you can make it

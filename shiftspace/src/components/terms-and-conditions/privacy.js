@@ -1,9 +1,7 @@
 import React from "react";
-import { Container, Grid, Image, List } from "semantic-ui-react";
+import { Container, Grid } from "semantic-ui-react";
 import MDBNFooter from "../footer/MDBNFooter";
-import Footer from "../home/footer";
 import MDBNNav from "../home/mbnNav";
-import Navbar from "../home/navbar";
 import ScrollToTop from "react-scroll-to-top";
 
 function PrivacyPolicy() {

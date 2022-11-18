@@ -1,17 +1,10 @@
 import React from "react";
 import { Container, Grid, Image, Card } from "semantic-ui-react";
 import MDBNFooter from "../footer/MDBNFooter";
-import Footer from "../home/footer";
 import MDBNNav from "../home/mbnNav";
-import Navbar from "../home/navbar";
 
 const backGroundStyle = {
   margin: "7em 0"
-};
-const footerStyle = {
-  // position: "absolute",
-  bottom: "-20px",
-  width: "100%",
 };
 const imageCSS = {
   borderRadius: "1em",
@@ -27,7 +20,7 @@ function AboutUs() {
             <Grid.Column>
               <Container>
                 <Image
-                  src={require("../../assets/laptopSquare.png")}
+                  src={require("../../assets/laptopSquare.webp")}
                   size={"large"}
                   style={imageCSS}
                 />
