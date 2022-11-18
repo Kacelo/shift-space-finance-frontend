@@ -1,138 +1,34 @@
-// import React, { useState } from "react";
-// import { Container } from "react-bootstrap";
-// import { Button, Divider, Form, Grid, Image } from "semantic-ui-react";
-// import MDBNFooter from "../footer/MDBNFooter";
-// import MDBNNav from "../home/mbnNav";
-
-// const footerStyle = {
-//   position: "absolute",
-//   bottom: "0",
-//   width: "100%",
-// };
-
-// const ContactUs = () => {
-//   const [query, setQuery] = useState({
-//     name: "",
-//     email: "",
-//   });
-//   // Update inputs value
-//   const handleParam = () => (e) => {
-//     const name = e.target.name;
-//     const value = e.target.value;
-//     setQuery((prevState) => ({
-//       ...prevState,
-//       [name]: value,
-//     }));
-//   };
-//   // Form Submit function
-//   const formSubmit = (e) => {
-//     e.preventDefault();
-//     const formData = new FormData();
-//     Object.entries(query).forEach(([key, value]) => {
-//       formData.append(key, value);
-//     });
-//     fetch("https://getform.io/https://getform.io/f/d55deb0c-c88b-4988-b4ac-f88570d48858", {
-//       method: "POST",
-//       body: formData,
-//     }).then(() => setQuery({ name: "", email: "", message: "" }));
-//   };
-//   return (
-//     <>
-//       <MDBNNav />
-//       <Container>
-//         <br></br>
-//         <br></br>
-//         <br></br>
-//         <br></br>
-//         <br></br>
-//         <br></br>
-//         <Grid divided="vertically" stackable={true}>
-//           <Grid.Row textAlign={"center"}>
-//             <h1>Get In Touch</h1>
-//           </Grid.Row>
-//           <Grid.Row columns={2}>
-//             <Grid.Column>
-//               <div class="container">
-//                 <ul className="list-unstyled mb-0">
-//                   <li>
-//                     <p>+264853454440</p>
-//                   </li>
-//                   <li>
-//                     <a href="mailto:info@m1.com.na">info@m1.com.na</a>
-//                   </li>
-//                   <li>
-//                     <p>www.shiftfinance.m1.com.na</p>
-//                   </li>
-//                   <li>
-//                     <p>Windhoek Namibia</p>
-//                   </li>
-//                 </ul>
-//               </div>
-//             </Grid.Column>
-//             <Grid.Column>
-//               <Form onSubmit={formSubmit}>
-//                 <Form.Group widths="equal">
-//                   <Form.Input
-//                     fluid
-//                     type="text"
-//                     name="name"
-//                     required
-//                     placeholder="Name"
-//                     // className="form-control"
-//                     value={query.name}
-//                     onChange={handleParam()}
-//                   />
-//                   <Form.Input
-//                     fluid
-//                     type="email"
-//                     name="email"
-//                     required
-//                     placeholder="Email"
-//                     // className="form-control"
-//                     value={query.email}
-//                     onChange={handleParam()}
-//                   />
-//                 </Form.Group>
-//                 <Form.TextArea
-//                   name="message"
-//                   required
-//                   placeholder="Message"
-//                   // className="form-control"
-//                   value={query.message}
-//                   onChange={handleParam()}
-//                 />
-//                 <button type="submit">Send</button>
-//               </Form>
-//             </Grid.Column>
-//           </Grid.Row>
-//         </Grid>
-//       </Container>
-//       <MDBNFooter />
-//     </>
-//   );
-// };
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Divider, Form, Grid, Image } from "semantic-ui-react";
+import { Divider, Form, Grid, Image, Segment } from "semantic-ui-react";
 import MDBNFooter from "../footer/MDBNFooter";
 import MDBNNav from "../home/mbnNav";
 
 const imageStyle = {
   cursor: "pointer",
 };
+const imageCSS = {
+  borderRadius: "1em",
+};
+const font = {
+  fontsize: "xxx-large"
+}
 const ContactUs = () => (
   <>
     <MDBNNav />
-    <Container>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Grid divided="vertically" stackable={true}>
-        <Grid.Row textAlign={"center"}>
-          <h1>Get In Touch</h1>
+    <Container stretched>
+      <Grid divided="vertically" stackable={true} padded={"vertically"}>
+        <Grid.Row stretched columns={2}>
+          <Grid.Column>
+            <h1 style={font}>Get In Touch</h1>
+          </Grid.Column>
+          <Grid.Column>
+            <Image
+              // size="small"
+              src={require("../../assets/flat-lay-business-concept.jpg")}
+              style={imageCSS}
+            />
+          </Grid.Column>
         </Grid.Row>
         <Grid.Row columns={2}>
           <Grid.Column>
@@ -155,9 +51,9 @@ const ContactUs = () => (
                     />
                   </a>
                 </div>
-                <div className="col"  style={imageStyle}>
+                <div className="col" style={imageStyle}>
                   <h5>Give us a call</h5>
-                  <a href="tel:+264853454440" >
+                  <a href="tel:+264853454440">
                     <Image
                       size="tiny"
                       src={require("../../assets/iphone.png")}
@@ -172,7 +68,7 @@ const ContactUs = () => (
             <h5>or leave us an email</h5>
 
             <Form
-              action="https://getform.io/f/d55deb0c-c88b-4988-b4ac-f88570d48858"
+              action="https://getform.io/f/a4476f0a-fced-4444-b3f9-6918ef2e7958"
               method="POST"
             >
               <Form.Group widths="equal">
@@ -185,13 +81,13 @@ const ContactUs = () => (
                 <Form.Input
                   fluid
                   label="First name"
-                  name="fname"
+                  name="firstname"
                   placeholder="First name"
                 />
                 <Form.Input
                   fluid
                   label="Last name"
-                  name="lname"
+                  name="lastname"
                   placeholder="Last name"
                 />
               </Form.Group>

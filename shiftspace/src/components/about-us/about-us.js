@@ -6,9 +6,7 @@ import MDBNNav from "../home/mbnNav";
 import Navbar from "../home/navbar";
 
 const backGroundStyle = {
-  backgroundColor: "#1C2541",
-  color: "white",
-  padding: "4rem 0 0 0",
+  margin: "7em 0"
 };
 const footerStyle = {
   // position: "absolute",
@@ -16,14 +14,14 @@ const footerStyle = {
   width: "100%",
 };
 const imageCSS = {
-  borderRadius: "8%",
+  borderRadius: "1em",
 };
 function AboutUs() {
   return (
     <div>
       <MDBNNav />{" "}
       <br></br>
-      <Container>
+      <Container style={backGroundStyle}>
         <Grid columns={2} stackable={true}>
           <Grid.Row>
             <Grid.Column>

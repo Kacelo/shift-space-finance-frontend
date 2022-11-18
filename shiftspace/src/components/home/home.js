@@ -7,6 +7,7 @@ import Navbar from "./navbar";
 import OurServices from "./ourServices";
 import MDBNNav from "./mbnNav";
 import MDBNFooter from "../footer/MDBNFooter";
+import ScrollToTop from "react-scroll-to-top";
 
 function Home() {
   const backGroundStyle = {
@@ -18,6 +19,8 @@ function Home() {
 
   return (
     <>
+      <ScrollToTop smooth />
+
       <MDBNNav />
       <br></br>
       <LandingPage />

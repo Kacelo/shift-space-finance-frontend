@@ -4,12 +4,13 @@ import MDBNFooter from "../footer/MDBNFooter";
 import Footer from "../home/footer";
 import MDBNNav from "../home/mbnNav";
 import Navbar from "../home/navbar";
+import ScrollToTop from "react-scroll-to-top";
 
 function PrivacyPolicy() {
   return (
     <div>
-      <MDBNNav />{" "}
-      <br></br>
+      <ScrollToTop smooth />
+      <MDBNNav /> <br></br>
       <Container>
         <Grid columns={2} divided="vertically" stackable>
           <Grid.Row>
@@ -529,7 +530,6 @@ function PrivacyPolicy() {
           </div>
           <div class="container"></div>
         </Grid>
-      
       </Container>
       <MDBNFooter />
     </div>
