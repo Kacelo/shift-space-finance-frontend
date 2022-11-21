@@ -6,13 +6,14 @@ import OurServices from "./ourServices";
 import MDBNNav from "./mbnNav";
 import MDBNFooter from "../footer/MDBNFooter";
 import ScrollToTop from "react-scroll-to-top";
-
+import OurServicesMDB from "../our-services/our-services";
 function Home() {
   const backGroundStyle = {
-    backgroundColor: "#1C2541",
+    backgroundColor: "#EFF5F5",
     color: "white",
-    padding: "5rem",
-    margin: "2rem 0",
+    padding: "15rem 0",
+    textAlign: "center",
+    // marginBottom: "5em"
   };
 
   return (
@@ -21,15 +22,17 @@ function Home() {
       <MDBNNav />
       <br></br>
       <LandingPage />
-      <Container>
-        <AppProccess />
-        <br></br>
-      </Container>
       <div id="our_services" style={backGroundStyle}>
         <Container>
-          <OurServices />
+          {/* <OurServices /> */}
+          <OurServicesMDB />
         </Container>
       </div>
+      {/* <Container style={{ margin: "0 0" }}> */}
+        <AppProccess />
+        <br></br>
+      {/* </Container> */}
+
       <MDBNFooter />
     </>
   );
