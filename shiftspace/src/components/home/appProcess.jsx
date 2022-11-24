@@ -35,7 +35,7 @@ const headings = {
 };
 const AppProccess = () => (
   <Grid style={backGroundStyle} stackable={true}>
-    <Grid.Row columns={4}>
+    <Grid.Row columns={2}>
       <Grid.Column width={4}>
         <Container>
           <Image

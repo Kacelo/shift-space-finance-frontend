@@ -16,12 +16,16 @@ const card1and3 = {
   color: "black",
   height: "22rem !important",
   marginTop: "1.5em",
+  borderRadius: "0px"
+
 };
 const card2 = {
   color: "#FFFFFF",
   backgroundColor: "#1C2541",
-    marginBottom: "7em",
-    margin: "0em",
+    marginBottom: "100px",
+    padding: "1em",
+    margin: "0.5em",
+    borderRadius: "0px",
 };
 const headings = {
   marginTop: "2rem",
@@ -59,7 +63,6 @@ function OurServicesMDB() {
               </MDBCardText>
             </MDBCardBody>
             <MDBCardFooter style={{ borderTop: "0px", marginBottom: "1em" }}>
-              <MDBBtn href="#">Apply Now</MDBBtn>
             </MDBCardFooter>
           </MDBCard>
         </MDBCol>
@@ -76,7 +79,6 @@ function OurServicesMDB() {
               </MDBCardText>
             </MDBCardBody>
             <MDBCardFooter style={{ borderTop: "0px", marginBottom: "1em" }}>
-              <MDBBtn href="#">Apply Now</MDBBtn>
             </MDBCardFooter>
           </MDBCard>
         </MDBCol>
@@ -96,7 +98,6 @@ function OurServicesMDB() {
               </MDBCardText>
             </MDBCardBody>
             <MDBCardFooter style={{ borderTop: "0px", marginBottom: "1em" }}>
-              <MDBBtn href="#">Apply Now</MDBBtn>
             </MDBCardFooter>
           </MDBCard>
         </MDBCol>
