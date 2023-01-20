@@ -3,10 +3,19 @@ import { Container, Grid } from "semantic-ui-react";
 import MDBNFooter from "../footer/MDBNFooter";
 import MDBNNav from "../home/mbnNav";
 import ScrollToTop from "react-scroll-to-top";
+import { Helmet } from "react-helmet";
 
 function PrivacyPolicy() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Privacy Policy</title>
+        <link
+          rel="canonical"
+          href="https://shiftfinance.m1.com.na/privacy-policy"
+        />
+      </Helmet>
       <ScrollToTop smooth />
       <MDBNNav /> <br></br>
       <Container>

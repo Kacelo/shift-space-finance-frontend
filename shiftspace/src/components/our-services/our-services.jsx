@@ -1,7 +1,6 @@
 import React from "react";
 import {
   MDBCard,
-  MDBCardImage,
   MDBCardBody,
   MDBCardTitle,
   MDBCardText,
@@ -9,23 +8,22 @@ import {
   MDBRow,
   MDBCol,
   MDBTypography,
-  MDBBtn,
 } from "mdb-react-ui-kit";
-import { Button, Card, Grid, Image } from "semantic-ui-react";
+import { Helmet } from "react-helmet";
+
 const card1and3 = {
   color: "black",
   height: "22rem !important",
   marginTop: "1.5em",
-  borderRadius: "0px"
-
+  borderRadius: "0px",
 };
 const card2 = {
   color: "#FFFFFF",
   backgroundColor: "#1C2541",
-    marginBottom: "100px",
-    padding: "1em",
-    margin: "0.5em",
-    borderRadius: "0px",
+  marginBottom: "100px",
+  padding: "1em",
+  margin: "0.5em",
+  borderRadius: "0px",
 };
 const headings = {
   marginTop: "2rem",
@@ -34,19 +32,19 @@ const headings = {
 function OurServicesMDB() {
   return (
     <>
-    <b>
-          <MDBTypography
-            tag="h1"
-            style={{
-              color: "#4f4f4f",
+      <b>
+        <MDBTypography
+          tag="h1"
+          style={{
+            color: "#4f4f4f",
             //   padding: "3rem",
-              fontWeight: "bolder",
-              marginBottom: "2rem",
-            }}
-          >
-            Our Services
-          </MDBTypography>
-        </b>
+            fontWeight: "bolder",
+            marginBottom: "2rem",
+          }}
+        >
+          Our Services
+        </MDBTypography>
+      </b>
       <MDBRow className="row-cols-1 row-cols-md-3 row-cols-sm-1 g-0">
         <MDBCol>
           <MDBCard className="h-120" style={card1and3}>
@@ -62,8 +60,9 @@ function OurServicesMDB() {
                 at all.
               </MDBCardText>
             </MDBCardBody>
-            <MDBCardFooter style={{ borderTop: "0px", marginBottom: "1em" }}>
-            </MDBCardFooter>
+            <MDBCardFooter
+              style={{ borderTop: "0px", marginBottom: "1em" }}
+            ></MDBCardFooter>
           </MDBCard>
         </MDBCol>
         <MDBCol>
@@ -78,8 +77,9 @@ function OurServicesMDB() {
                 time.
               </MDBCardText>
             </MDBCardBody>
-            <MDBCardFooter style={{ borderTop: "0px", marginBottom: "1em" }}>
-            </MDBCardFooter>
+            <MDBCardFooter
+              style={{ borderTop: "0px", marginBottom: "1em" }}
+            ></MDBCardFooter>
           </MDBCard>
         </MDBCol>
         <MDBCol>
@@ -97,8 +97,9 @@ function OurServicesMDB() {
                 customers.
               </MDBCardText>
             </MDBCardBody>
-            <MDBCardFooter style={{ borderTop: "0px", marginBottom: "1em" }}>
-            </MDBCardFooter>
+            <MDBCardFooter
+              style={{ borderTop: "0px", marginBottom: "1em" }}
+            ></MDBCardFooter>
           </MDBCard>
         </MDBCol>
       </MDBRow>

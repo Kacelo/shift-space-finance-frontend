@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import { Form, Grid, Image } from "semantic-ui-react";
 import MDBNFooter from "../footer/MDBNFooter";
 import MDBNNav from "../home/mbnNav";
+import { Helmet } from "react-helmet";
 
 const imageStyle = {
   cursor: "pointer",
@@ -11,10 +12,15 @@ const imageCSS = {
   borderRadius: "1em",
 };
 const font = {
-  fontsize: "xxx-large"
-}
+  fontsize: "xxx-large",
+};
 const ContactUs = () => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Contact Us</title>
+      <link rel="canonical" href="https://shiftfinance.m1.com.na/contact-us" />
+    </Helmet>
     <MDBNNav />
     <Container stretched>
       <Grid divided="vertically" stackable={true} padded={"vertically"}>

@@ -3,12 +3,20 @@ import { Container, Grid, List } from "semantic-ui-react";
 import MDBNFooter from "../footer/MDBNFooter";
 import MDBNNav from "../home/mbnNav";
 import ScrollToTop from "react-scroll-to-top";
+import { Helmet } from "react-helmet";
+
 const backGroundStyle = {
   margin: "7em 0",
 };
 function TermsAndConditions() {
   return (
     <div>
+      <Helmet>
+      <meta charSet="utf-8" />
+        <title>Terms and Conditions</title>
+        <link rel="canonical" href="https://shiftfinance.m1.com.na/terms-and-conditions" />
+      </Helmet>
+      
       <ScrollToTop smooth />
       <MDBNNav />
       <Container style={backGroundStyle}>
