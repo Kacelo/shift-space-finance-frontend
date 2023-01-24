@@ -1,14 +1,10 @@
 import React from "react";
-import { Card, List, Grid, Segment, Container } from "semantic-ui-react";
+import { Card, List, Grid } from "semantic-ui-react";
 
 const ApplicationProcess = () => {
   const backGroundStyle = {
     padding: "2rem",
     margin: "2rem",
-  };
-  const cardStyles = {
-    backgroundColor: "#1C2541",
-    color: "white"
   };
   return (
     <Grid columns="equal" stackable={true} style={backGroundStyle}> 

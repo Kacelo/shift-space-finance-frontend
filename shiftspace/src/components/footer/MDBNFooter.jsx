@@ -36,6 +36,9 @@ function MDBNFooter() {
                   src={require("../../assets/ShiftSpace-png.png")}
                   size={"small"}
                   style={imgStyle}
+                  alt="shiftspace logo"
+                  width= "auto"
+                  height="auto"
                 />
               </li>
               <li>
@@ -51,6 +54,9 @@ function MDBNFooter() {
                   src={require("../../assets/Logo-M1-Portrait-Tech.png")}
                   size={"small"}
                   style={imgStyle}
+                  alt="M1 technologies logo"
+                  width= "auto"
+                  height="auto"
                 />
               </li>
               <li>

@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+
+Sitemap: https://shiftfinance.m1.com.na/sitemap.xml
+
+Allow: /terms-and-conditions
+Allow: /about-us
+Allow: /contact-us
+Allow: /privacy-policy
+Allow: /#our_services
