@@ -1,8 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Divider, Form, Grid, Image, Segment } from "semantic-ui-react";
+import { Form, Grid, Image } from "semantic-ui-react";
 import MDBNFooter from "../footer/MDBNFooter";
 import MDBNNav from "../home/mbnNav";
+import { Helmet } from "react-helmet";
 
 const imageStyle = {
   cursor: "pointer",
@@ -11,10 +12,15 @@ const imageCSS = {
   borderRadius: "1em",
 };
 const font = {
-  fontsize: "xxx-large"
-}
+  fontsize: "xxx-large",
+};
 const ContactUs = () => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Contact Us</title>
+      <link rel="canonical" href="https://shiftfinance.m1.com.na/contact-us" />
+    </Helmet>
     <MDBNNav />
     <Container stretched>
       <Grid divided="vertically" stackable={true} padded={"vertically"}>
@@ -25,6 +31,7 @@ const ContactUs = () => (
           <Grid.Column>
             <Image
               // size="small"
+              alt="business person's table"
               src={require("../../assets/flat-lay-business-concept.jpg")}
               style={imageCSS}
             />
@@ -32,12 +39,6 @@ const ContactUs = () => (
         </Grid.Row>
         <Grid.Row columns={2}>
           <Grid.Column>
-            {/* <div class="container">
-              <div>+264853454440</div>
-              <div>info@m1.com.na</div>
-              <div>www.shiftfinance.m1.com.na</div>
-              <div>Windhoek Namibia</div>
-            </div> */}
             <div class="container">
               <div className="row">
                 <div className="col" style={imageStyle}>
@@ -46,6 +47,7 @@ const ContactUs = () => (
                     {" "}
                     <Image
                       size="small"
+                      alt="whatsapp logo"
                       src={require("../../assets/03_Stacked/01_Digital/03_PNG/Black/Digital_Stacked_Black.png")}
                       wrapped
                     />
@@ -56,6 +58,7 @@ const ContactUs = () => (
                   <a href="tel:+264853454440">
                     <Image
                       size="tiny"
+                      alt="iphone image"
                       src={require("../../assets/iphone.png")}
                       wrapped
                     />

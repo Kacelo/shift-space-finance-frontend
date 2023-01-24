@@ -1,17 +1,11 @@
 import React from "react";
 import { Container, Grid, Image, Card } from "semantic-ui-react";
 import MDBNFooter from "../footer/MDBNFooter";
-import Footer from "../home/footer";
 import MDBNNav from "../home/mbnNav";
-import Navbar from "../home/navbar";
+import { Helmet } from "react-helmet";
 
 const backGroundStyle = {
-  margin: "7em 0"
-};
-const footerStyle = {
-  // position: "absolute",
-  bottom: "-20px",
-  width: "100%",
+  margin: "7em 0",
 };
 const imageCSS = {
   borderRadius: "1em",
@@ -19,15 +13,19 @@ const imageCSS = {
 function AboutUs() {
   return (
     <div>
-      <MDBNNav />{" "}
-      <br></br>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About Us</title>
+        <link rel="canonical" href="https://shiftfinance.m1.com.na/about-us" />
+      </Helmet>
+      <MDBNNav /> <br></br>
       <Container style={backGroundStyle}>
         <Grid columns={2} stackable={true}>
           <Grid.Row>
             <Grid.Column>
               <Container>
                 <Image
-                  src={require("../../assets/laptopSquare.png")}
+                  src={require("../../assets/laptopSquare.webp")}
                   size={"large"}
                   style={imageCSS}
                 />
@@ -71,7 +69,6 @@ function AboutUs() {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        
       </Container>
       <MDBNFooter />
     </div>
