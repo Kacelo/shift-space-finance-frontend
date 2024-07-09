@@ -5,7 +5,7 @@ import LandingPage from "./landing";
 import OurServices from "./ourServices";
 import MDBNNav from "./mbnNav";
 import MDBNFooter from "../footer/MDBNFooter";
-import ScrollToTop from "react-scroll-to-top";
+import ToTop from "react-scroll-to-top";
 import OurServicesMDB from "../our-services/our-services";
 import { Helmet } from "react-helmet";
 
