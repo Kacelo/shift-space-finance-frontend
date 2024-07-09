@@ -1,4 +1,5 @@
 # ShiftSpace Finance
+![Website Launch Diagram](/src/assets/launch/Shift-Finance-Website-Launch-975x1024.png)
 
 ShiftSpace Finance is a website for a 100% Namibian corporation registered with the Business and Intellectual Property Authority (BIPA), Registration Number CC/2022/08696. ShiftSpace Financial Services CC is licensed and regulated by the Namibia Financial Institutions Supervisory Institution Authority (NAMFISA).
 
